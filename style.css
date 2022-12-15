@@ -16,8 +16,16 @@
   align-items: center;
 }
 
+.align-start {
+  align-items: flex-start;
+}
+
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .fixed {
@@ -55,6 +63,10 @@
 
 .z-1 {
   z-index: 1;
+}
+
+.padding-top-8 {
+  padding-top: 8rem;
 }
 
 .background-orange {
@@ -197,6 +209,18 @@ h3 {
   }
 }
 
+@keyframes setaAnimation {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
 #neryHome {
   font-size: 85px;
   font-weight: 800;
@@ -217,6 +241,21 @@ h3 {
   font-weight: 800;
   letter-spacing: 6px;
   margin-left: 2rem;
+}
+
+#setaDown {
+  justify-content: center;
+  animation: setaAnimation 2.5s infinite;
+}
+
+#containerSeta {
+  width: 100%;
+}
+
+#tresPontos {
+  position: absolute;
+  bottom: 70px;
+  right: 50px;
 }
 
 nav ul {
